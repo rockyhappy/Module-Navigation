@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/screen_2"
+    >
+    <fragment
+        android:id="@+id/screen_2"
+        android:name="com.devrachit.featurea.Screen2Fragment"
+        android:label="asdfgh"
+        >
+        <action
+            android:id="@+id/action_screen_2_to_screen_3"
+            app:destination="@id/screen_3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/screen_3"
+        android:name="com.devrachit.featureb.Screen3Fragment"
+        android:label="asdfgh"
+        >
+    </fragment>
+
+</navigation>

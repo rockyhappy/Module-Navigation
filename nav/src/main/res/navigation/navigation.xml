@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    >
+
+    <fragment
+        android:id="@+id/screen_1"
+        android:name="com.devrachit.navmath.Screen1Fragment"
+        android:label="@string/screen_1_title"
+        app:layout-label="@string/screen_1_title">
+        <action
+            android:id="@+id/action_screen_1_to_screen_2"
+            app:destination="@id/screen_2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/screen_2"
+        android:name="com.devrachit.featurea.Screen2Fragment"
+        android:label="asdfgh"
+        app:layout-label="@string/screen_2_title">
+        <action
+            android:id="@+id/action_screen_2_to_screen_3"
+            app:destination="@id/screen_3" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/screen_3"
+        android:name="com.devrachit.featureb.Screen3Fragment"
+        android:label="@string/screen_3_title"
+        app:layout-label="@string/screen_3_title" />
+
+    <navigation-actions
+        android:id="@+id/action_screen_2_to_screen_3"
+        app:destination="@id/screen_1" />
+
+</navigation>
